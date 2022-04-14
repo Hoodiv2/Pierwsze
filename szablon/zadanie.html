@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>GalaXyMusic</title>
+</head>
+<body>
+    <header>
+            <center>
+<h1 id="text">GalaXyMusic<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="white" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+            </svg>
+</h1>
+</center>
+</header>
+
+<center>
+<nav>
+<a href="zadanie.html"><input type="button" name="Home" id="btn"  value="Home"></a>
+<a href="top.html"><input type="button" name="top5" id="btn"  value="TOP 5"></a>
+<a href="lista.html"><input type="button" name="lista" id="btn2"  value="Lista Utworów"></a>
+<a href="o nas.html"><input type="button" name="o nas" id="btn3"  value="O Nas"></a>
+<a href="kontakt.html"><input type="button" name="" id="btn4"  value="Kontakt"></a>
+</nav>
+</center>   
+<br><br><br><br>
+
+<center>
+<a id="naglowek">Słuchaj muzyki za darmo w każdym momencie</a>
+
+</center>
+<br><br><br><br><br>
+<section id="back">
+<h1 id="napis2">Sprawdź najczęściej słuchanych wykonawców na platformie Spotify</h1>
+<center>
+    <a href="https://open.spotify.com/artist/1Kjs5u8GQf6zCFdTj6SI9E?si=L0N-9ccaQC2ZBlG38PTQmQ"><input type="button" value="1 - Malik Montana" id="btn5"></a><br><br>
+    <a href="https://open.spotify.com/artist/0MIG6gMcQTSvFbKvUwK0id?si=5i7TF8wzTr-O7mLqXTgLDA"><input type="button"value="2 - Mata" id="btn5" ></a><br><br>
+    <a href="https://open.spotify.com/artist/1fZAAHNWdSM5gqbi9o5iEA?si=A_0G7aSFRo-ALBKO_Sadzw"><input type="button"value="3 - Chivas" id="btn5" ></a><br><br>
+    <a href="https://open.spotify.com/artist/6DAQjwwMGZ9QgqHhIkU7H0?si=8wE9zUC-RnWTPmDkQaLVFQ"><input type="button"value="4 - Sentino" id="btn5" ></a><br><br>
+    <a href="https://open.spotify.com/artist/2IHoZ3RrDJIikMRsYgHjhy?si=a-ZjneGcSpGFi2fv2Z0z7Q"><input type="button"value="5 - Kizo" id="btn5" ></a><br>
+  </center>
+</section>
+<center>
+<img src="zdj.png" width="600px" height="350px" ></img>
+</center>
+<br><br><br><br><br><br><br><br><br><br>
+<center>
+    <a id="naglowek">Muzyka to nie tylko słuchanie piosenek , to styl życia</a>
+</center>   
+    
+
+<section class="slider">
+<section class="slideshow-container">
+<center>
+    <h1 id="napis1">Popularne utwory</h1>
+</center>  
+    <section class="mySlides fade">
+      <img src="zdj_slider1.png" style="width:100%">
+      <section class="text">Gruby AK47 x Zeju POG - ŻYCIA SCHEMAT</section>
+    </section>
+  
+    <section class="mySlides fade">
+      <img src="zdj_slider2.png" style="width:100%">
+      <section class="text">IShowSpeed - Shake (Official Music Video)</section>
+    </section>
+  
+    <section class="mySlides fade">
+      <img src="zdj_slider3.png" style="width:100%">
+      <section class="text">Sentino - RIO (prod. Getmony)</section>
+    </section>
+
+    <section class="mySlides fade">
+        <img src="zdj_slider4.png" style="width:100%">
+        <section class="text">Mata - Papuga ft. Quebonafide, Malik Montana</section>
+      </section>
+
+</section>
+</section>
+<br><br><br>
+
+<center>
+    <a id="naglowek">Wsłuchaj się w niezliczoną ilość twojej ulubionej muzyki</a>
+</center> 
+
+
+
+<section id="stopka">
+<footer>
+	<center>
+    Wykonał: Kuba Bałut
+	</center>
+</footer>
+</section>
+</body>
+</html>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+</script>
